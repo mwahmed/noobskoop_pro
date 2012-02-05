@@ -1,0 +1,35 @@
+
+
+<header>
+<div id="wrapper">
+	<div id="header-wrapper">
+
+
+<div id="header">
+<h1><a href=/>NoobSkoop</a></h1>
+<h2>Nuke It!</h2>
+</div>
+
+<div id="menu">
+<ul>
+     <li><%= link_to "Home", root_path %></li>
+      <% if signed_in? %>
+      <li><%= link_to "Profile", current_user %></li>
+      <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+      <li><%= link_to "Calendar", calendar_path %></li>
+      <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+      <% else %>
+      <li><%= link_to "Sign in", signin_path %></li>
+      <li><%= link_to "Sign up", sign_up_path %></li>
+      <%end%>
+
+      <li><%= link_to "Help", help_path %></li>
+      <li><%= link_to "Contact us", contactus_path %></li>
+      <li><%= link_to "About", about_path %></li>
+
+</ul>
+</div>
+</div>
+</div>
+
+</header>
