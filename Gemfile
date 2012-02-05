@@ -5,10 +5,10 @@ gem 'rails', '3.0.7'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'yaml_db'
-
+gem 'sqlite3-ruby', :require => 'sqlite3'
 # Use unicorn as the web server
 # gem 'unicorn'
-gem 'mysql'
+#gem 'mysql'
 gem 'gravatar_image_tag' 
 gem 'will_paginate', '3.0.pre2'
 # Deploy with Capistrano
